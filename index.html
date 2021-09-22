@@ -13,89 +13,270 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="how__it__works py-5 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                    <h6 class="my-2">WORK FLOW</h6>
-                    <h3 class="mt-2 mb-4">How it works</h3>
+    <header class='position-absolute w-100'>
+        <div class="header-box">
+            <div class='row align-items-center'>
+                <div class='col-12 col-sm-4'>
+                    <div class=" d-flex header-sm-icons">
+                        <img src="./assets/icons/facebook.svg" alt="facebook icon" class='me-3'/>
+                        <img src="./assets/icons/twitter.svg" alt="twitter icon" class='me-3'/>
+                        <img src="./assets/icons/linkedin.svg" alt="linked-in icon" />
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 text-center">
-                    <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/location.svg">
-                    <p class="fw-bold my-2">Pick Destination</p>
-                    <p>A small river named Duden flows by their place and supplies it with you</p>
+
+                <div class='col col-sm-8'>
+                    <div class="d-flex flex-wrap ms-auto align-items-center justify-content-md-end mt-4 mt-sm-0 header-box-text">
+                        <p class='mb-0 me-3'>Join our team. Are you ready to change the game?</p>
+                        <p class='mb-0 me-1 text-white'>Find out more</p>
+                        <img
+                          src="./assets/icons/arrow-right.svg"
+                          alt="arrow-right icon"
+                          class="pt-1"
+                        />
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 text-center">
-                    <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/team.svg">
-                    <p class="fw-bold my-2">Select Term</p>
-                    <p>A small river named Duden flows by their place and supplies it with you</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <!-- <div class='row'>
+
+            </div> -->
+            <div class="nav-brand d-flex align-items-center">
+                <div class='me-5'>
+                    <img src="./assets/images/brand-logo.svg" alt="brand logo" />
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 text-center">
-                    <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/equipment.svg">
-                    <p class="fw-bold my-2">Choose An Equipment</p>
-                    <p>A small river named Duden flows by their place and supplies it with you</p>
+                <div class="nav-helpline text-center">
+                    <p class='mb-0 text-white'>Need I help? Talk to an Expert</p>
+                    <p class='mb-0'>+1 910 730 09</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 text-center">
-                    <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/pay.svg">
-                    <p class="fw-bold my-2">Pay</p>
-                    <p>A small river named Duden flows by their place and supplies it with you</p>
+            </div>
+
+            <div class="hamburger-menu d-md-none">
+                <img src="./assets/icons/hamburger-menu.png" alt="hamburger" />
+            </div>
+
+            <ul class="nav-links d-none d-md-flex list-unstyled">
+                <li class='me-5'>
+                    <a href="#about">About Us</a>
+                </li>
+                <li class='me-5'>
+                    <a href="#services">Services</a>
+                </li>
+                <li class='me-5'>
+                    <a href="#news">News</a>
+                </li>
+                <li class='me-5'>
+                    <a href="#clients">Our Clients</a>
+                </li>
+                <li class='me-5'>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class='me-4'>
+                    <a href="#" class="nav-button">Request a call</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <main class='pt-5'>
+        <section class="herobanner">
+            <div class='row'>
+                <div class='col-12 col-lg-6'>
+                    <h1 class='text-center text-lg-start text-white mt-5 mx-xl-5 mb-5 mb-lg-0 pt-2'>
+                        <span class="heading">We provide</span> industry focused services for
+                        public & private clients
+                    </h1>
+                </div>
+                <div class='col-12 col-lg-6'>
+                    <form class="herobanner-form mx-auto ms-lg-auto me-lg-3">
+                        <h2 class='text-white fs-4 mb-5'>Login</h2>
+                        <input type="text" placeholder="Username" class='w-100 mb-3' />
+                        <input type="password" placeholder="Password" class='w-100' />
+                        <p class="text-end mt-2 password-text">Forgot password?</p>
+                        <button type="submit" class="login-button w-100 py-3 mt-4 text-uppercase text-white border-0">Login</button>
+                        <p class="signup-text text-center mt-3">
+                            Don't have an account?
+                            <a href="#">Signup</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+  
+        <section class="about-section my-5 py-5 mx-3 mx-sm-5 px-lg-5" id="about">
+            <div class='row align-items-center'>
+                <div class='col-12 col-lg-6 mb-4 mb-lg-0'>
+                    <div class="me-xl-5 pe-xl-5">
+                        <h2 class='text-uppercase mb-1'>About axet</h2>
+                        <h3 class='mb-3'>Who we are</h3>
+                        <div class='me-xxl-4'>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book.
+                            </p>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 
-            </div>
-        </div>
-    </section>
-    <section class="testimonial pt-5">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="my-2">TESTIMONIAL</h6>
-                <h3 class="mt-2 mb-5">Happy Clients</h3>
-            </div>
-            <div class="d-flex flex-lg-row flex-column bd-highlight">
-                <div class="p-4 m-3 shadow-lg rounded text-center">
-                    <img class="img-fluid rounded-circle" src="./assets/male1.png">
-                    <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                </div>
-                <div class="p-4 m-3 shadow-lg rounded text-center">
-                    <img class="img-fluid rounded-circle" src="./assets/female.png">
-                    <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                </div>
-                <div class="p-4 m-3 shadow-lg rounded text-center">
-                    <img class="img-fluid rounded-circle" src="./assets/male2.png">
-                    <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class='col-12 col-lg-6'>
+                    <div class="about-img">
+                        <img src="./assets/images/about-image.svg" alt="about section" />
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="news pt-5">
-        <div class="container">
-            <div class="text-center">
-                <h3 class="my-2">From the News</h3>
-                <h6 class="mt-2 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+        </section>
+  
+        <section class="services-section my-5 mx-3 mx-sm-5 px-lg-3 py-5" id="services">
+            <h2 class='text-uppercase ms-3 text-center'>Services we provide</h2>
+            <h3 class='ms-3 text-center mb-5 pb-5'>Our Services</h3>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 mb-5 mb-xl-0">
+                    <div class='mx-3 services-card bg-white text-center px-3 py-4 h-100'>
+                        <div class="icon-box">
+                            <img src="./assets/icons/support.svg" alt="support icon" />
+                        </div>
+                        <h4 class='mb-4'>24/7 Support</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3 mb-5 mb-xl-0">
+                    <div class='mx-3 services-card bg-white text-center px-3 py-4 h-100'>
+                        <div class="icon-box">
+                            <img src="./assets/icons/construction.svg" alt="construction icon" />
+                        </div>
+                        <h4 class='mb-4'>Construction Materials</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3 mb-5 mb-xl-0">
+                    <div class='mx-3 services-card bg-white text-center px-3 py-4 h-100'>
+                        <div class="icon-box">
+                            <img src="./assets/icons/crane.svg" alt="crane icon" />
+                        </div>
+                        <h4 class='mb-4'>Crane Machines</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3 mb-5 mb-xl-0">
+                    <div class='mx-3 services-card bg-white text-center px-3 py-4 h-100'>
+                        <div class="icon-box">
+                            <img src="./assets/icons/crushing.svg" alt="crushing icon" />
+                        </div>
+                        <h4 class='mb-4'>Crushing Operations</h4>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's .
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="row bd-highlight">
-                <div class="col-lg-4 col-sm-12 p-4 text-center">
-                    <img class="img-fluid " src="./assets/material.jpg">
-                    <h6 class="fw-bold mt-4 mb-2">Find best Construction materials</h6>
-                    <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
-                    <button type="button" class="btn btn-pink text-white">Learn more</button>
-                </div>
-                <div class="col-lg-4 col-sm-12  p-4 text-center">
-                    <img class="img-fluid" src="./assets/talking.jpg">
-                    <h6 class="fw-bold mt-4 mb-2">The Trend Tower Done In 2019 Summer</h6>
-                    <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
-                    <button type="button" class="btn btn-pink text-white">Learn more</button>
-                </div>
-                <div class="col-lg-4  col-sm-12  p-4 text-center">
-                    <img class="img-fluid" src="./assets/material.jpg">
-                    <h6 class="fw-bold mt-4 mb-2">Big Team Already Here</h6>
-                    <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
-                    <button type="button" class="btn btn-pink text-white">Learn more</button>
+        </section>
+
+        <section class="how__it__works py-5 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h6 class="my-2">WORK FLOW</h6>
+                        <h3 class="mt-2 mb-4">How it works</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/location.svg">
+                        <p class="fw-bold my-2">Pick Destination</p>
+                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/team.svg">
+                        <p class="fw-bold my-2">Select Term</p>
+                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/equipment.svg">
+                        <p class="fw-bold my-2">Choose An Equipment</p>
+                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center">
+                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/pay.svg">
+                        <p class="fw-bold my-2">Pay</p>
+                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
+        </section>
+
+        <section class="testimonial pt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="my-2">TESTIMONIAL</h6>
+                    <h3 class="mt-2 mb-5">Happy Clients</h3>
+                </div>
+                <div class="d-flex flex-lg-row flex-column bd-highlight">
+                    <div class="p-4 m-3 shadow-lg rounded text-center">
+                        <img class="img-fluid rounded-circle" src="./assets/male1.png">
+                        <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                    <div class="p-4 m-3 shadow-lg rounded text-center">
+                        <img class="img-fluid rounded-circle" src="./assets/female.png">
+                        <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                    <div class="p-4 m-3 shadow-lg rounded text-center">
+                        <img class="img-fluid rounded-circle" src="./assets/male2.png">
+                        <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news pt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="my-2">From the News</h3>
+                    <h6 class="mt-2 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+                </div>
+                <div class="row bd-highlight">
+                    <div class="col-lg-4 col-sm-12 p-4 text-center">
+                        <img class="img-fluid " src="./assets/material.jpg">
+                        <h6 class="fw-bold mt-4 mb-2">Find best Construction materials</h6>
+                        <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
+                        <button type="button" class="btn btn-pink text-white">Learn more</button>
+                    </div>
+                    <div class="col-lg-4 col-sm-12  p-4 text-center">
+                        <img class="img-fluid" src="./assets/talking.jpg">
+                        <h6 class="fw-bold mt-4 mb-2">The Trend Tower Done In 2019 Summer</h6>
+                        <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
+                        <button type="button" class="btn btn-pink text-white">Learn more</button>
+                    </div>
+                    <div class="col-lg-4  col-sm-12  p-4 text-center">
+                        <img class="img-fluid" src="./assets/material.jpg">
+                        <h6 class="fw-bold mt-4 mb-2">Big Team Already Here</h6>
+                        <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
+                        <button type="button" class="btn btn-pink text-white">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
