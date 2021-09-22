@@ -2,6 +2,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+main {
+    background-color: #E5E5E5;
+}
+
 .header-box {
     background: #772D8B;
     border-bottom: 1px solid #000000;
@@ -146,4 +150,19 @@ body {
     .herobanner {
         padding: 167px 24px 134px;
     }
+}
+
+.how__it__works{
+    background: url(./assets/section_men-1\ 1.png);
+    opacity: 0.8;
+}
+.border-pink{
+    border: 3px solid #EE2B7A;
+}
+.testimonial,
+.news{
+    background-color: #ebe6e6;
+}
+.btn-pink{
+    background-color:#EE2B7A;
 }
