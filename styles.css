@@ -1,3 +1,149 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.header-box {
+    background: #772D8B;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 21px 12px 17px;
+}
+
+.header-box-text p:first-of-type,
+.nav-helpline p:last-of-type {
+    color: #FFC42D;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.26);
+}
+
+.hamburger-menu img {
+    width: 60px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.nav-links .nav-button {
+    background: #EE2B7A;
+    border-radius: 5px;
+    padding: 7.5px 22.5px 7.5px 24.5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.herobanner {
+    background-image: url(./assets/images/background.svg);
+    padding: 167px 67px 134px;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.herobanner h1 {
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 154.7%;
+}
+
+.herobanner .heading {
+    font-size: 76px;
+}
+
+.herobanner-form {
+    background: rgba(55, 55, 55, 0.79);
+    border-radius: 5px;
+    padding: 18px 38px 41px 35px;
+    width: 340px;
+}
+
+.herobanner-form input {
+    padding: 12px 19px 14px;
+    font-size: 14px;
+    color: #848484;
+}
+
+.password-text,
+.signup-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6C4DA;
+}
+
+.signup-text a {
+    color: #EE2B7A;
+}
+
+.login-button {
+    background-color: #EE2B7A;
+    border-radius: 4px;
+}
+
+.about-section h2,
+.services-section h2 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #995AAA;
+}
+
+.about-section h3,
+.services-section h3 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #474747;
+}
+
+.about-section p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.services-card {
+    box-shadow: 2px 4px 26px rgba(0, 0, 0, 0.07);
+}
+
+.icon-box {
+    width: 106px;
+    height: 106px;
+    background-color: #772D8B;
+    margin: 0 auto 76px;
+    padding: 23px;
+}
+
+.services-section h4 {
+    font-weight: 600;
+    color: #565656;
+}
+
+.services-section p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+    .herobanner-form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .herobanner-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .herobanner {
+        padding: 167px 24px 134px;
+    }
+}
