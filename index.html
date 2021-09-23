@@ -40,12 +40,9 @@
             </div>
         </div>
 
-        <nav class="navbar">
-            <!-- <div class='row'>
-
-            </div> -->
+        <nav class="navbar navbar navbar-expand-lg">
             <div class="nav-brand d-flex align-items-center">
-                <div class='me-5'>
+                <div class='me-sm-5'>
                     <img src="./assets/images/brand-logo.svg" alt="brand logo" />
                 </div>
                 <div class="nav-helpline text-center">
@@ -54,36 +51,38 @@
                 </div>
             </div>
 
-            <div class="hamburger-menu d-md-none">
+            <button class="navbar-toggler hamburger-menu" id='toggle-button' type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./assets/icons/hamburger-menu.png" alt="hamburger" />
-            </div>
+            </button>
 
-            <ul class="nav-links d-none d-md-flex list-unstyled">
-                <li class='me-5'>
-                    <a href="#about">About Us</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#services">Services</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#news">News</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#clients">Our Clients</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li class='me-4'>
-                    <a href="#" class="nav-button">Request a call</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav-links ps-5 pt-4 pb-3 p-md-0 d-md-flex list-unstyled">
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#news">News</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#clients">Our Clients</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-4'>
+                        <a href="#" class="nav-button">Request a call</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
   
     <main class='pt-5'>
         <section class="herobanner">
-            <div class='row'>
+            <div class='row' id='herobanner-row'>
                 <div class='col-12 col-lg-6'>
                     <h1 class='text-center text-lg-start text-white mt-5 mx-xl-5 mb-5 mb-lg-0 pt-2'>
                         <span class="heading">We provide</span> industry focused services for
@@ -198,30 +197,38 @@
 
         <section class="how__it__works py-5 text-white">
             <div class="container">
+                <div class="text-center">
+                    <h6 class="my-2">WORK FLOW</h6>
+                    <h3 class="mt-2 mb-4">How it works</h3>
+                </div>
                 <div class="row">
-                    <div class="text-center">
-                        <h6 class="my-2">WORK FLOW</h6>
-                        <h3 class="mt-2 mb-4">How it works</h3>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/location.svg">
+                            <p class="fw-bold my-2">Pick Destination</p>
+                            <p>A small river named Duden flows by their place and supplies it with you</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/location.svg">
-                        <p class="fw-bold my-2">Pick Destination</p>
-                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/team.svg">
+                            <p class="fw-bold my-2">Select Term</p>
+                            <p>A small river named Duden flows by their place and supplies it with you</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/team.svg">
-                        <p class="fw-bold my-2">Select Term</p>
-                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/equipment.svg">
+                            <p class="fw-bold my-2">Choose An Equipment</p>
+                            <p>A small river named Duden flows by their place and supplies it with you</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/equipment.svg">
-                        <p class="fw-bold my-2">Choose An Equipment</p>
-                        <p>A small river named Duden flows by their place and supplies it with you</p>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-center">
-                        <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/pay.svg">
-                        <p class="fw-bold my-2">Pay</p>
-                        <p>A small river named Duden flows by their place and supplies it with you</p>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/pay.svg">
+                            <p class="fw-bold my-2">Pay</p>
+                            <p>A small river named Duden flows by their place and supplies it with you</p>
+                        </div>
                     </div>
                     
                 </div>
@@ -236,22 +243,22 @@
                 </div>
                 <div class="d-flex flex-lg-row flex-column bd-highlight">
                     <div class="p-4 m-3 shadow-lg rounded text-center">
-                        <img class="img-fluid rounded-circle" src="./assets/male1.png">
+                        <img class="img-fluid rounded-circle" src="./assets/images/male1.png">
                         <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
                     <div class="p-4 m-3 shadow-lg rounded text-center">
-                        <img class="img-fluid rounded-circle" src="./assets/female.png">
+                        <img class="img-fluid rounded-circle" src="./assets/images/female.png">
                         <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
                     <div class="p-4 m-3 shadow-lg rounded text-center">
-                        <img class="img-fluid rounded-circle" src="./assets/male2.png">
+                        <img class="img-fluid rounded-circle" src="./assets/images/male2.png">
                         <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="news pt-5">
+        <section class="news py-5 mb-4">
             <div class="container">
                 <div class="text-center">
                     <h3 class="my-2">From the News</h3>
@@ -259,19 +266,19 @@
                 </div>
                 <div class="row bd-highlight">
                     <div class="col-lg-4 col-sm-12 p-4 text-center">
-                        <img class="img-fluid " src="./assets/material.jpg">
+                        <img class="img-fluid " src="./assets/images/material.jpg">
                         <h6 class="fw-bold mt-4 mb-2">Find best Construction materials</h6>
                         <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
                         <button type="button" class="btn btn-pink text-white">Learn more</button>
                     </div>
                     <div class="col-lg-4 col-sm-12  p-4 text-center">
-                        <img class="img-fluid" src="./assets/talking.jpg">
+                        <img class="img-fluid" src="./assets/images/talking.jpg">
                         <h6 class="fw-bold mt-4 mb-2">The Trend Tower Done In 2019 Summer</h6>
                         <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
                         <button type="button" class="btn btn-pink text-white">Learn more</button>
                     </div>
                     <div class="col-lg-4  col-sm-12  p-4 text-center">
-                        <img class="img-fluid" src="./assets/material.jpg">
+                        <img class="img-fluid" src="./assets/images/material.jpg">
                         <h6 class="fw-bold mt-4 mb-2">Big Team Already Here</h6>
                         <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
                         <button type="button" class="btn btn-pink text-white">Learn more</button>
@@ -279,54 +286,65 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Video section -->
-        <section class="video-section">
-            <video id="video-section"
-                poster="https://cdn.glitch.com/a8f831d3-9699-4887-93cc-c3f1e944b75b%2F56da372f-3efb-463f-9b41-a0276696606d.image.png?v=1631794522901"
-                src="https://res.cloudinary.com/dobztfsdj/video/upload/v1580686541/samples/elephants.mp4" loop playsinline
-                muted></video>
-            <div class="video-overlay">
-                <div class="viewport-header">
-                    <h2>industry's standard dummy text</h2>
-                    <a href="javascript:void(0)" onclick="toggleVideo()">
-                        <img src="https://cdn.glitch.com/a8f831d3-9699-4887-93cc-c3f1e944b75b%2Fbe194a0b-4c2e-4492-b4d8-24b6ca9c9862.image.png?v=1631793982048"
-                            alt="play button" class="play-button" id="play-btn" width="160px" />
-                    </a>
+        <section class="video-section py-3">
+                <div class="text-center text-white my-5 pb-3">
+                    <h2 class='fs-1'>industry's standard dummy text</h2>
+                    <img src='./assets/icons/video_button.svg'
+                        alt="play button" class="play-button" id="play-btn" width="160px" 
+                    />
                     <p>Watch video tour now</p>
                 </div>
-            </div>
         </section>
         <!-- Video section ends-->
     
         <!-- client section -->
-        <section class="container">
-            <h2 class="text-center text-secondary pt-5">Our Clients</h2>
-    
-            <div class="row  bd-highlight mb-3">
-                <div class="col-12 col-sm-6 col-xl-2">
-                    <img src="/assets/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="col-12 col-sm-6 col-xl-2">
-                    <img src="/assets/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="col-12 col-sm-6 col-xl-2">
-                    <img src="/assets/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="col-12 col-sm-6 col-xl-2">
-                    <img src="/assets/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="col-12 col-sm-6 col-xl-2">
-                    <img src="/assets/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="col-12 col-sm-6 col-xl-2">
-                    <img src="/assets/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
-                        class="img-fluid">
+        <section class='client-section'>
+            <div class="container pb-5">
+                <h2 class="fs-1 text-center text-secondary pt-5">Our Clients</h2>
+        
+                <div class="row  bd-highlight mb-3">
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -337,10 +355,10 @@
 
     <footer>
         <div class="footer">
-            <div class="container">
-                <div class="row pt-5">
-                    <div class="col-lg-4 col-12 mt-2">
-                        <div class="mx-1">
+            <div class="px-5">
+                <div class="row py-5 g-5">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div>
                             <h2 class="text-white">About Company</h2>
                             <p class="footer-desc pt-2">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -348,8 +366,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-12 mt-2">
-                        <div class="mx-1">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div class="ms-lg-3 ms-xl-5">
 
                             <h2 class="text-white">Information</h2>
                             <ul class=" unstyled-list list-unstyled pt-2">
@@ -361,9 +379,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-12 mt-2">
-                        <div class="mx-1">
-
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div class="">
                             <h2 class="text-white">Contact Info</h2>
                             <ul class="footer-desc list-unstyled pt-2">
                                 <li class="text-white">
@@ -380,21 +397,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-12 mt-2">
-                        <div class="mx-1">
-
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div class="">
                             <h2>Recent news</h2>
-                            <ul class="pt-2 list-unstyled">
-                                <li>
-                                    <p class="text-white">Lorem Ipsum is simply dummy text</p>
+                            <ul class="pt-2 footer-news list-unstyled">
+                                <li class="py-3">
+                                    <p class="text-white mb-0">Lorem Ipsum is simply dummy text</p>
                                     <small class="text-white">AUGUST 28, 2019</small>
                                 </li>
-                                <li>
-                                    <p class="text-white">Lorem Ipsum is simply dummy text</p>
-                                    <small>AUGUST 28, 2019</small>
+                                <li class="py-3">
+                                    <p class="text-white mb-0">Lorem Ipsum is simply dummy text</p>
+                                    <small class="text-white">AUGUST 28, 2019</small>
                                 </li>
-                                <li class="text-white">
-                                    <p class="text-white">Lorem Ipsum is simply dummy text</p>
+                                <li class="py-3">
+                                    <p class="text-white mb-0">Lorem Ipsum is simply dummy text</p>
                                     <small class="text-white">AUGUST 28, 2019</small>
                                 </li>
                             </ul>
@@ -405,12 +421,13 @@
             </div>
         </div>
         <div class="copy_right">
-            <p class="text-center pt-2 dft">© 2019 Backhoe All rights reserved.</p>
+            <p class="text-center py-3 m-0 dft">© 2019 Backhoe All rights reserved.</p>
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
+    <script src='./script.js'></script>
 </body>
 </html>

@@ -49,6 +49,10 @@ main {
     max-width: 100%;
 }
 
+.herobanner .row.shift {
+    margin-top: 420px;
+}
+
 .herobanner h1 {
     font-weight: 300;
     font-size: 42px;
@@ -153,7 +157,7 @@ main {
 }
 
 .how__it__works{
-    background: url(./assets/section_men-1\ 1.png);
+    background: url(./assets/images/section_men-1\ 1.png);
     opacity: 0.8;
 }
 .border-pink{
@@ -163,63 +167,43 @@ main {
 .btn-pink{
     background-color:#EE2B7A;
 }
-video {
-    object-fit: cover;
-    width: 100%;
-    height: 433px;
-    top: 0;
-    left: 0;
-}
 
 .video-section {
-    position: relative;
-    height: 433px;
-    color: #ffffff;
-}
-
-.viewport-header {
-    position: absolute;
-    top: 110px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: #772d8b33;
-}
-
-.video-section h2 {
-    text-align: center;
-    letter-spacing: 1px;
+    background-image: url(./assets/images/truck.svg);
+    background-size: cover;
 }
 
 .play-button {
     margin: 25px;
 }
 
+.client-section {
+    background: #FAFAFA;
+}
+
+.client-logo-box {
+    width: fit-content;
+}
 
 .footer {
     background: #333333;
     color: white;
 }
 
+footer li,
+footer p,
+footer a {
+    font-size: 14px;
+}
+
+.footer-news li {
+    border-bottom: 1px solid #999797;
+}
+
 .pft {
     color: #474747;
 }
 
-
 .copy_right {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 40px;
     background: #E5E5E5;
 }
