@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    background-color: #E5E5E5;
+    background-color: rgba(265, 265, 265, 0.8);
 }
 
 .header-box {
@@ -159,10 +159,7 @@ main {
 .border-pink{
     border: 3px solid #EE2B7A;
 }
-.testimonial,
-.news{
-    background-color: #ebe6e6;
-}
+
 .btn-pink{
     background-color:#EE2B7A;
 }
