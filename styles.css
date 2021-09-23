@@ -138,18 +138,6 @@ main {
     font-size: 14px;
 }
 
-@media screen and (max-width: 992px) {
-    .herobanner-form {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .herobanner-form {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 450px) {
     .herobanner {
         padding: 167px 24px 134px;
