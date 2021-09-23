@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXET Academy | Team MMM</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel='stylesheet' href='./styles.css' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header class='position-absolute w-100'>
@@ -38,12 +40,9 @@
             </div>
         </div>
 
-        <nav class="navbar">
-            <!-- <div class='row'>
-
-            </div> -->
+        <nav class="navbar navbar navbar-expand-lg">
             <div class="nav-brand d-flex align-items-center">
-                <div class='me-5'>
+                <div class='me-sm-5'>
                     <img src="./assets/images/brand-logo.svg" alt="brand logo" />
                 </div>
                 <div class="nav-helpline text-center">
@@ -52,36 +51,38 @@
                 </div>
             </div>
 
-            <div class="hamburger-menu d-md-none">
+            <button class="navbar-toggler hamburger-menu" id='toggle-button' type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./assets/icons/hamburger-menu.png" alt="hamburger" />
-            </div>
+            </button>
 
-            <ul class="nav-links d-none d-md-flex list-unstyled">
-                <li class='me-5'>
-                    <a href="#about">About Us</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#services">Services</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#news">News</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#clients">Our Clients</a>
-                </li>
-                <li class='me-5'>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li class='me-4'>
-                    <a href="#" class="nav-button">Request a call</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav-links ps-5 pt-4 pb-3 p-md-0 d-md-flex list-unstyled">
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#news">News</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#clients">Our Clients</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-5'>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class='mb-3 mb-md-0 me-4'>
+                        <a href="#" class="nav-button">Request a call</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
   
     <main class='pt-5'>
         <section class="herobanner">
-            <div class='row'>
+            <div class='row' id='herobanner-row'>
                 <div class='col-12 col-lg-6'>
                     <h1 class='text-center text-lg-start text-white mt-5 mx-xl-5 mb-5 mb-lg-0 pt-2'>
                         <span class="heading">We provide</span> industry focused services for
@@ -194,32 +195,37 @@
             </div>
         </section>
 
-        <section class="how__it__works py-5 text-white ">
-            <div class="container-fluid">
-                <div class="mx-xl-5 px-xl-5">
+        <section class="how__it__works py-5 text-white">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="my-2">WORK FLOW</h6>
+                    <h3 class="mt-2 mb-4">How it works</h3>
+                </div>
                 <div class="row">
-                    <div class="text-center">
-                        <h6 class="my-2">WORK FLOW</h6>
-                        <h3 class="mt-2 mb-4">How it works</h3>
-                    </div>
-                    
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
-                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/location.svg">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/location.svg">
                             <p class="fw-bold my-2">Pick Destination</p>
                             <p>A small river named Duden flows by their place and supplies it with you</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
-                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/team.svg">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/team.svg">
                             <p class="fw-bold my-2">Select Term</p>
                             <p>A small river named Duden flows by their place and supplies it with you</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
-                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/equipment.svg">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/equipment.svg">
                             <p class="fw-bold my-2">Choose An Equipment</p>
                             <p>A small river named Duden flows by their place and supplies it with you</p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center">
-                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/pay.svg">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="mx-3 mx-sm-5 mx-md-0 text-center">
+                            <img class="img-fluid p-3 border-pink rounded-circle" src="./assets/icons/pay.svg">
                             <p class="fw-bold my-2">Pay</p>
                             <p>A small river named Duden flows by their place and supplies it with you</p>
                         </div>
@@ -231,64 +237,200 @@
         </section>
 
         <section class="testimonial pt-5">
-            <div class="container-fluid">
-                <div class="mx-xl-5 px-xl-5">
-                    <div class="text-center">
-                        <h6 class="my-2">TESTIMONIAL</h6>
-                        <h3 class="mt-2 mb-5">Happy Clients</h3>
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="my-2">TESTIMONIAL</h6>
+                    <h3 class="mt-2 mb-5">Happy Clients</h3>
+                </div>
+                <div class="d-flex flex-lg-row flex-column bd-highlight">
+                    <div class="p-4 m-3 shadow-lg rounded text-center">
+                        <img class="img-fluid rounded-circle" src="./assets/images/male1.png">
+                        <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
-                    <div class="d-flex flex-lg-row flex-column bd-highlight">
-                        <div class="p-4 m-3 shadow-lg rounded text-center">
-                            <img class="img-fluid rounded-circle" src="./assets/male1.png">
-                            <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        </div>
-                        <div class="p-4 m-3 shadow-lg rounded text-center">
-                            <img class="img-fluid rounded-circle" src="./assets/female.png">
-                            <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        </div>
-                        <div class="p-4 m-3 shadow-lg rounded text-center">
-                            <img class="img-fluid rounded-circle" src="./assets/male2.png">
-                            <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        </div>
+                    <div class="p-4 m-3 shadow-lg rounded text-center">
+                        <img class="img-fluid rounded-circle" src="./assets/images/female.png">
+                        <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                    <div class="p-4 m-3 shadow-lg rounded text-center">
+                        <img class="img-fluid rounded-circle" src="./assets/images/male2.png">
+                        <p class="my-4 px-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
                 </div>
                 
             </div>
         </section>
 
-        <section class="news pt-5">
-            <div class="container-fluid mt-5">
-                <div class="mx-xl-5 px-xl-5">
-                    <div class="text-center">
-                        <h3 class="my-2">From the News</h3>
-                        <h6 class="mt-2 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+        <section class="news py-5 mb-4">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="my-2">From the News</h3>
+                    <h6 class="mt-2 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+                </div>
+                <div class="row bd-highlight">
+                    <div class="col-lg-4 col-sm-12 p-4 text-center">
+                        <img class="img-fluid " src="./assets/images/material.jpg">
+                        <h6 class="fw-bold mt-4 mb-2">Find best Construction materials</h6>
+                        <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
+                        <button type="button" class="btn btn-pink text-white">Learn more</button>
                     </div>
-                    <div class="row bd-highlight">
-                        <div class="col-lg-4 col-sm-12 p-4 text-center">
-                            <img class="img-fluid " src="./assets/material.jpg">
-                            <h6 class="fw-bold mt-4 mb-2">Find best Construction materials</h6>
-                            <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
-                            <button type="button" class="btn btn-pink text-white">Learn more</button>
-                        </div>
-                        <div class="col-lg-4 col-sm-12  p-4 text-center">
-                            <img class="img-fluid" src="./assets/talking.jpg">
-                            <h6 class="fw-bold mt-4 mb-2">The Trend Tower Done In 2019 Summer</h6>
-                            <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
-                            <button type="button" class="btn btn-pink text-white">Learn more</button>
-                        </div>
-                        <div class="col-lg-4  col-sm-12  p-4 text-center">
-                            <img class="img-fluid" src="./assets/material.jpg">
-                            <h6 class="fw-bold mt-4 mb-2">Big Team Already Here</h6>
-                            <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
-                            <button type="button" class="btn btn-pink text-white">Learn more</button>
-                        </div>
+                    <div class="col-lg-4 col-sm-12  p-4 text-center">
+                        <img class="img-fluid" src="./assets/images/talking.jpg">
+                        <h6 class="fw-bold mt-4 mb-2">The Trend Tower Done In 2019 Summer</h6>
+                        <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
+                        <button type="button" class="btn btn-pink text-white">Learn more</button>
+                    </div>
+                    <div class="col-lg-4  col-sm-12  p-4 text-center">
+                        <img class="img-fluid" src="./assets/images/material.jpg">
+                        <h6 class="fw-bold mt-4 mb-2">Big Team Already Here</h6>
+                        <p class="my-4 px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .</p>
+                        <button type="button" class="btn btn-pink text-white">Learn more</button>
                     </div>
                 </div>
                 
             </div>
         </section>
+
+        <!-- Video section -->
+        <section class="video-section py-3">
+                <div class="text-center text-white my-5 pb-3">
+                    <h2 class='fs-1'>industry's standard dummy text</h2>
+                    <img src='./assets/icons/video_button.svg'
+                        alt="play button" class="play-button" id="play-btn" width="160px" 
+                    />
+                    <p>Watch video tour now</p>
+                </div>
+        </section>
+        <!-- Video section ends-->
+    
+        <!-- client section -->
+        <section class='client-section'>
+            <div class="container pb-5">
+                <h2 class="fs-1 text-center text-secondary pt-5">Our Clients</h2>
+        
+                <div class="row  bd-highlight mb-3">
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid"
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2">
+                        <div class="mx-auto client-logo-box">
+                            <img src="./assets/images/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 1.png" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- client section ends-->
     </main>
+
+    <!-- footer starts -->
+
+    <footer>
+        <div class="footer">
+            <div class="px-5">
+                <div class="row py-5 g-5">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div>
+                            <h2 class="text-white">About Company</h2>
+                            <p class="footer-desc pt-2">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div class="ms-lg-3 ms-xl-5">
+
+                            <h2 class="text-white">Information</h2>
+                            <ul class=" unstyled-list list-unstyled pt-2">
+                                <li class="text-white"><a>Home</a></li>
+                                <li class="text-white"><a>About Us</a></li>
+                                <li class="text-white"><a>Services</a></li>
+                                <li class="text-white"><a>News</a></li>
+                                <li class="text-white"><a>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div class="">
+                            <h2 class="text-white">Contact Info</h2>
+                            <ul class="footer-desc list-unstyled pt-2">
+                                <li class="text-white">
+                                    <i class="text-white"></i> Address: 679 Grand avenu,
+                                    Central Parl, NYC, NY
+                                </li>
+                                <li class="text-white">
+                                    <i class="text-white"></i>Custom Support & Sale:
+                                    +1-5050-607080
+                                </li>
+                                <li class="text-white">
+                                    <i class="text-white"></i>mail: contact@axet.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-4 mb-lg-0">
+                        <div class="">
+                            <h2>Recent news</h2>
+                            <ul class="pt-2 footer-news list-unstyled">
+                                <li class="py-3">
+                                    <p class="text-white mb-0">Lorem Ipsum is simply dummy text</p>
+                                    <small class="text-white">AUGUST 28, 2019</small>
+                                </li>
+                                <li class="py-3">
+                                    <p class="text-white mb-0">Lorem Ipsum is simply dummy text</p>
+                                    <small class="text-white">AUGUST 28, 2019</small>
+                                </li>
+                                <li class="py-3">
+                                    <p class="text-white mb-0">Lorem Ipsum is simply dummy text</p>
+                                    <small class="text-white">AUGUST 28, 2019</small>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy_right">
+            <p class="text-center py-3 m-0 dft">© 2019 Backhoe All rights reserved.</p>
+        </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src='./script.js'></script>
 </body>
 </html>
