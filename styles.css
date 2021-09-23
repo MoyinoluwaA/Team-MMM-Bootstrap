@@ -163,3 +163,63 @@ main {
 .btn-pink{
     background-color:#EE2B7A;
 }
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 433px;
+    top: 0;
+    left: 0;
+}
+
+.video-section {
+    position: relative;
+    height: 433px;
+    color: #ffffff;
+}
+
+.viewport-header {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #772d8b33;
+}
+
+.video-section h2 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.play-button {
+    margin: 25px;
+}
+
+
+.footer {
+    background: #333333;
+    color: white;
+}
+
+.pft {
+    color: #474747;
+}
+
+
+.copy_right {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background: #E5E5E5;
+}
