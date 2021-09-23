@@ -200,6 +200,12 @@ footer a {
     border-bottom: 1px solid #999797;
 }
 
+.fas {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
 .pft {
     color: #474747;
 }
